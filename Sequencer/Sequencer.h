@@ -17,6 +17,7 @@ typedef void(^SequencerStep)(id result, SequencerCompletion completion);
 }
 
 - (void)run;
+- (void)stop;
 - (void)enqueueStep:(SequencerStep)step;
 
 @end
