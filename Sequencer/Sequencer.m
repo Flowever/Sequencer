@@ -24,6 +24,10 @@
     [self runNextStepWithResult:nil];
 }
 
+- (void)stop {
+    [steps removeAllObjects];
+}
+
 - (void)enqueueStep:(SequencerStep)step
 {
     [steps addObject:[step copy]];
